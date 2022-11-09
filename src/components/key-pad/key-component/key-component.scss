@@ -1,0 +1,11 @@
+.key {
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    color: black;
+    border: 1px solid white;
+  }
+}
