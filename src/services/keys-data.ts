@@ -32,7 +32,7 @@ export const keysData: KeyDataType[] = [
     role: "digit",
   },
   {
-    id: "substract",
+    id: "subtract",
     label: "-",
     role: "operator",
   },
@@ -72,7 +72,7 @@ export const keysData: KeyDataType[] = [
     role: "digit",
   },
   {
-    id: "eguals",
+    id: "equals",
     label: "=",
     role: "equals",
   },

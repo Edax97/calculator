@@ -3,10 +3,13 @@ import { useOperateService } from "../../../services/use-operate-service";
 import { DisplayComponent } from "../display-component/DisplayComponent";
 
 export const DisplayContainer = () => {
-  const { operation$, lastValue$ } = useOperateService();
-  const operation = useObservableState(operation$);
-  const lastValue = useObservableState(lastValue$);
+  const { operation$, displayValue$ } = useOperateService();
+  const operation = useObservableState(operation$, []);
+  const displayValue = useObservableState(displayValue$, "0");
   return (
-    <DisplayComponent operation={operation?.join("")} lastValue={lastValue} />
+    <DisplayComponent
+      operation={operation?.join("")}
+      displayValue={displayValue}
+    />
   );
 };
